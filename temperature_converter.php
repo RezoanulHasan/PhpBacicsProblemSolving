@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Temperature Converter</title>
+        
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
@@ -36,10 +38,10 @@
 
         if ($conversion == "c_to_f") {
             $converted_temperature = ($temperature * 9/5) + 32;
-            echo "<p class='mt-4'>$temperature&deg;C is $converted_temperature&deg;F</p>";
+            echo "<p class='mt-4 text-xl '>$temperature&deg;C is $converted_temperature&deg;F</p>";
         } elseif ($conversion == "f_to_c") {
             $converted_temperature = ($temperature - 32) * 5/9;
-            echo "<p class='mt-4'>$temperature&deg;F is $converted_temperature&deg;C</p>";
+            echo "<p class='mt-4  text-xl '>$temperature&deg;F is $converted_temperature&deg;C</p>";
         }
     }
     ?>
